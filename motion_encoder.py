@@ -1,7 +1,7 @@
 from src.utils.eval_util import load_mclip_model
 
 
-mclip_ckpt = '/home/ctq566/motion-diffusion-model/flame/flame_mclip_hml3d_bc.ckpt'
+mclip_ckpt = '/home/pjr726/flame/flame_mclip_hml3d_bc.ckpt'
 mclip = load_mclip_model(mclip_ckpt)
 mclip.to('cuda:0')
 
@@ -73,7 +73,7 @@ def rot6d_to_flame(rot6d):
 
 
 if __name__ == '__main__':
-    xyz = np.load('/home/ctq566/motion-diffusion-model/save/p2p_quaternion_2_random/001/sample00_rep00.npy')
+    xyz = np.load('/home/pjr726/flame/sample00_rep00.npy')
     rot6d = xyz_to_rot6d(xyz)
     flame = rot6d_to_flame(rot6d)
 

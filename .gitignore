@@ -137,3 +137,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+flame_mclip_hml3d_bc.ckpt
+human_body_prior
+sample00_rep00.npy
