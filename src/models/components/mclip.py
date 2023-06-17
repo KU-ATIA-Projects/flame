@@ -3,7 +3,7 @@ from transformers import RobertaTokenizer, RobertaModel
 from typing import List
 import torch
 import numpy as np
-from torch.nn import TransformerEncoder, TransformerEncoderLayer
+from src.models.components.my_transformer import TransformerEncoder, TransformerEncoderLayer
 import torch.nn.functional as F
 from src.models.components.nn import timestep_embedding
 from src.utils.misc import lengths_to_mask
